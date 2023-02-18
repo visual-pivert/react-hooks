@@ -22,6 +22,5 @@ export function useSync(initialValue, id) {
         window.reactSync[id] = []
     }, [])
     const reactLinkLen = window.reactSync[id].length
-    console.log([window.reactSync[id][reactLinkLen - 1][0], setValues])
     return [window.reactSync[id][reactLinkLen - 1][0], setValues]
 }
